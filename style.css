@@ -122,8 +122,8 @@ footer img {
   margin-right: 2rem;
 }
 
-#construction img {
-  width: 25rem;
+.construction img {
+  width: min(75vw, 25rem);
 }
 
 #small {
