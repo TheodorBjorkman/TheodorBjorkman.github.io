@@ -1,0 +1,61 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+:root {
+  --min-fill: 240px;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  box-shadow: none;
+  height: 200px;
+  width: 200px;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--min-fill), 1fr)
+  );
+  grid-template-rows: repeat(
+    auto-fill,
+    minmax(calc(var(--min-fill) + 50px), 1fr)
+  );
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+.deleteButton {
+  justify-self: end;
+  align-items: start;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+#plus {
+  --max-size: 1fr;
+  --min-size: 500px;
+  transform: rotate(45deg);
+  place-self: center;
+  width: var(--min-size);
+  height: var(--min-size);
+}
+
+.note {
+  width: 240px;
+  height: 290px;
+}
+
+#empty {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  background-color: #ecec36;
+}
