@@ -59,3 +59,9 @@ textarea {
 .color {
   background-color: #ecec36;
 }
+
+.delete:focus {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
